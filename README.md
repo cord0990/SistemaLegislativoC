@@ -1,9 +1,7 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=45&pause=1000&color=2E4A7A&center=true&vCenter=true&width=600&height=100&lines=Sistema+Legislativo;Tramitaci%C3%B3n+en+C;Estructuras+de+Datos" alt="Typing SVG" />
+<img src="assets/terminal_header.svg" alt="Terminal animation — Sistema Legislativo" width="750" />
 
-<br/>
-<p><b>Sistema de tramitación legislativa en C</b></p>
 <br/>
 
 ![C](https://img.shields.io/badge/C-TurboC-1a2744?style=for-the-badge&logo=c&logoColor=white)

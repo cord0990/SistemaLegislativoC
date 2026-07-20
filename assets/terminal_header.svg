@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 530" role="img" aria-label="Terminal animation showing Sistema Legislativo compiled and running in C">
+  <defs>
+    <pattern id="scanlines" patternUnits="userSpaceOnUse" width="4" height="4">
+      <rect width="4" height="2" y="2" fill="rgba(0,0,0,0.03)"/>
+    </pattern>
+  </defs>
+  <style>
+    text.line {
+      font-family: 'Fira Code', Consolas, Monaco, 'Courier New', monospace;
+      font-size: 14px;
+      opacity: 0;
+      animation: fadeIn 0.3s ease-out forwards;
+    }
+    @keyframes fadeIn { to { opacity: 1; } }
+    @keyframes cursorBlink {
+      0%, 49.9% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+  </style>
+
+  <!-- Terminal Background -->
+  <rect width="750" height="530" rx="8" fill="#0c0c0c"/>
+
+  <!-- Title Bar -->
+  <rect width="750" height="34" rx="8" fill="#1e1e1e"/>
+  <rect y="26" width="750" height="10" fill="#1e1e1e"/>
+  <rect y="34" width="750" height="1" fill="#333"/>
+
+  <!-- Window Controls -->
+  <circle cx="20" cy="17" r="6" fill="#ff5f56"/>
+  <circle cx="40" cy="17" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="17" r="6" fill="#27c93f"/>
+  <text x="375" y="22" fill="#8b949e" font-family="'Segoe UI', Arial, sans-serif" font-size="12" text-anchor="middle">tramitacion.exe — Terminal</text>
+
+  <!-- Terminal Content -->
+  <g xml:space="preserve">
+<!-- Compile Command -->
+<text class="line" y="60" style="animation-delay:0.5s"><tspan x="18" fill="#569cd6">C:\proyecto&gt;</tspan><tspan fill="#98c379"> gcc main.c -o tramitacion.exe</tspan></text>
+
+<!-- Run Command -->
+<text class="line" y="80" style="animation-delay:1.8s"><tspan x="18" fill="#569cd6">C:\proyecto&gt;</tspan><tspan fill="#98c379"> tramitacion.exe</tspan></text>
+
+<!-- ASCII Art: SISTEMA (figlet Small) -->
+<text class="line" x="18" y="116" fill="#d19a66" style="animation-delay:3.0s"> ___ ___ ___ _____ ___ __  __   _</text>
+<text class="line" x="18" y="132" fill="#d19a66" style="animation-delay:3.15s">/ __|_ _/ __|_   _| __|  \/  | /_\</text>
+<text class="line" x="18" y="148" fill="#d19a66" style="animation-delay:3.3s">\__ \| |\__ \ | | | _|| |\/| |/ _ \</text>
+<text class="line" x="18" y="164" fill="#d19a66" style="animation-delay:3.45s">|___/___|___/ |_| |___|_|  |_/_/ \_\</text>
+
+<!-- ASCII Art: LEGISLATIVO (figlet Small) -->
+<text class="line" x="18" y="186" fill="#d19a66" style="animation-delay:3.6s"> _    ___ ___ ___ ___ _      _ _____ _____   _____</text>
+<text class="line" x="18" y="202" fill="#d19a66" style="animation-delay:3.75s">| |  | __/ __|_ _/ __| |    /_\_   _|_ _\ \ / / _ \</text>
+<text class="line" x="18" y="218" fill="#d19a66" style="animation-delay:3.9s">| |__| _| (_ || |\__ \ |__ / _ \| |  | | \ V / (_) |</text>
+<text class="line" x="18" y="234" fill="#d19a66" style="animation-delay:4.05s">|____|___\___|___|___/____/_/ \_\_| |___| \_/ \___/</text>
+
+<!-- Subtitle -->
+<text class="line" x="18" y="260" fill="#6a9955" style="animation-delay:4.5s">  Estructuras de Datos · C · PUCV 2024</text>
+
+<!-- Menu (matches main.c lines 1044-1055 exactly) -->
+<text class="line" x="18" y="290" fill="#d19a66" style="animation-delay:5.2s">|------------------------------------------------------|</text>
+<text class="line" x="18" y="308" fill="#e5e5e5" style="animation-delay:5.5s">|  Bienvenido al Programa de Tramitacion Legislativa   |</text>
+<text class="line" x="18" y="326" fill="#d19a66" style="animation-delay:5.8s">|----------- Seleccione una opcion --------------------|</text>
+<text class="line" x="18" y="344" fill="#e5e5e5" style="animation-delay:6.1s">| 1. Base de Datos Proyectos                           |</text>
+<text class="line" x="18" y="362" fill="#e5e5e5" style="animation-delay:6.3s">| 2. Base de Datos de Politicos                        |</text>
+<text class="line" x="18" y="380" fill="#e5e5e5" style="animation-delay:6.5s">| 3. Lista Camara de Diputados                         |</text>
+<text class="line" x="18" y="398" fill="#e5e5e5" style="animation-delay:6.7s">| 4. Lista Camara de Senadores                         |</text>
+<text class="line" x="18" y="416" fill="#e5e5e5" style="animation-delay:6.9s">| 5. Funciones Avanzadas en Proyectos                  |</text>
+<text class="line" x="18" y="434" fill="#e5e5e5" style="animation-delay:7.1s">| 6. Calcular Cantidad de Politicos                    |</text>
+<text class="line" x="18" y="452" fill="#e5e5e5" style="animation-delay:7.3s">| 7. Listar Politicos de un Proyecto especifico        |</text>
+<text class="line" x="18" y="470" fill="#e5e5e5" style="animation-delay:7.5s">| 0. Cerrar programa                                   |</text>
+<text class="line" x="18" y="488" fill="#d19a66" style="animation-delay:7.7s">|------------------------------------------------------|</text>
+
+<!-- Prompt -->
+<text class="line" x="18" y="510" fill="#e5e5e5" style="animation-delay:8.2s">Seleccione una opcion: </text>
+  </g>
+
+  <!-- Blinking Cursor (appears after prompt, blinks forever) -->
+  <rect x="211" y="498" width="9" height="14" rx="1" fill="#e5e5e5" opacity="0" style="animation: cursorBlink 1s linear 8.5s infinite;"/>
+
+  <!-- Subtle CRT Scanline Overlay -->
+  <rect x="0" y="35" width="750" height="495" fill="url(#scanlines)" pointer-events="none"/>
+
+  <!-- Terminal Border -->
+  <rect x="0.5" y="0.5" width="749" height="529" rx="8" fill="none" stroke="#333" stroke-width="1"/>
+</svg>
